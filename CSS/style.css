@@ -358,6 +358,8 @@ body {
 }
 .portfolio-pojects-item > img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .portfolio-project {
   background: #ffffff;
