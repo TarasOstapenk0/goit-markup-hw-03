@@ -29,7 +29,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
   background-color: var(--page-background-color);
-  width: 1600px;
+  /* width: 1600px; */
 }
 .container {
   width: 1200px;
@@ -117,7 +117,7 @@ body {
 }
 .section-hero {
   background: var(--hero-background-color);
-  width: 1600px;
+  /* width: 1600px; */
   padding: 200px 0;
 }
 .hero-block {
@@ -313,9 +313,9 @@ body {
   color: var(--hover-color);
 }
 /* Porfolio page */
-.portfolio {
+/* .portfolio {
   width: 1600px;
-}
+} */
 .portfolio-list {
   display: flex;
   justify-content: center;
