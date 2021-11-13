@@ -39,11 +39,14 @@ body {
 .section {
   padding: 94px 0;
 }
+.header {
+  border: 1px solid transparent;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24px auto;
+  padding: 24px 0;
 }
 .header-list {
   display: flex;
@@ -364,6 +367,7 @@ body {
 .portfolio-project {
   background: #ffffff;
   border: 1px solid #eeeeee;
+  border-top-color: transparent;
   box-sizing: border-box;
   padding: 20px 24px;
 }
