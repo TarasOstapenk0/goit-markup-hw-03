@@ -13,36 +13,24 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+    <link rel="stylesheet" href="./CSS/modern-normalize.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <div class="header-list">
-          <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
-
-          <nav class="navigation">
-            <ul class="list nav-list">
-              <li class="current">Студия</li>
-              <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
-              <li><a href="#" class="link-nav">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <ul class="contacts list">
-            <li><a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a></li>
+        <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
+        <nav class="navigation">
+          <ul class="list nav-list">
+            <li class="current">Студия</li>
+            <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
+            <li><a href="#" class="link-nav">Контакты</a></li>
           </ul>
-        </div>
+        </nav>
+        <ul class="contacts list">
+          <li><a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -108,23 +96,31 @@
           <ul class="list team-list">
             <li class="team-member">
               <img src="./images/team_card1.jpg" alt="фото product desinger" width="270" />
-              <h3 class="team-member-name">Игорь Демьяненко</h3>
-              <p lang="en" class="team-member-position">Product Designer</p>
+              <div class="team-member-card">
+                <h3 class="team-member-name">Игорь Демьяненко</h3>
+                <p lang="en" class="team-member-position">Product Designer</p>
+              </div>
             </li>
             <li class="team-member">
               <img src="./images/team_card2.jpg" alt="фото frontend developer" width="270" />
-              <h3 class="team-member-name">Ольга Репина</h3>
-              <p lang="en" class="team-member-position">Frontend Developer</p>
+              <div class="team-member-card">
+                <h3 class="team-member-name">Ольга Репина</h3>
+                <p lang="en" class="team-member-position">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-member">
               <img src="./images/team_card3.jpg" alt="фото marketing manager" width="270" />
-              <h3 class="team-member-name">Николай Тарасов</h3>
-              <p lang="en" class="team-member-position">Marketing</p>
+              <div class="team-member-card">
+                <h3 class="team-member-name">Николай Тарасов</h3>
+                <p lang="en" class="team-member-position">Marketing</p>
+              </div>
             </li>
             <li class="team-member">
               <img src="./images/team_card4.jpg" alt="фото UI Designer" width="270" />
-              <h3 class="team-member-name">Михаил Ермаков</h3>
-              <p lang="en" class="team-member-position">UI Designer</p>
+              <div class="team-member-card">
+                <h3 class="team-member-name">Михаил Ермаков</h3>
+                <p lang="en" class="team-member-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -132,10 +128,10 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="/goit-markup-hw-02/index.html" class="footer-logo"
+        <a href="./index.html" class="footer-logo"
           ><span class="footer-logo-blue">Web</span>Studio</a
         >
-        <address>
+        <address class="footer-list">
           <ul class="footer-address">
             <li>
               <a

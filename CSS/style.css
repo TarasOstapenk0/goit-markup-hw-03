@@ -29,7 +29,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
   background-color: var(--page-background-color);
-  /* width: 1600px; */
 }
 .container {
   width: 1200px;
@@ -40,18 +39,14 @@ body {
   padding: 94px 0;
 }
 .header {
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
 }
-.header-list {
-  display: flex;
-  align-items: center;
-}
+
 .navigation {
   margin-left: 93px;
 }
@@ -61,8 +56,15 @@ body {
 .nav-list > li:nth-child(n + 2) {
   margin-left: 50px;
 }
-.not-visible {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 .logo {
   font-family: Raleway, sans-serif;
@@ -74,6 +76,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--third-color);
+  padding: 24px 0;
 }
 .logo-blue {
   color: var(--hover-color);
@@ -88,6 +91,7 @@ body {
 .link-nav {
   text-decoration: none;
   color: var(--main-color);
+  padding: 32px 0;
 }
 .link-nav:focus,
 .link-nav:hover {
@@ -110,6 +114,7 @@ body {
 .link-contact {
   text-decoration: none;
   color: var(--second-color);
+  padding: 32px 0;
 }
 .contacts .link-contact:hover,
 .contacts .link-contact:focus {
@@ -176,6 +181,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 .why-we-p {
   font-size: 14px;
@@ -184,7 +190,7 @@ body {
 
   letter-spacing: 0.03em;
   color: var(--second-color);
-  margin-top: 10px;
+
   min-width: 260px;
 }
 .what-we-do {
@@ -204,6 +210,11 @@ body {
 }
 .what-we-do-list > li:nth-child(n + 2) {
   margin-left: 30px;
+}
+.what-we-do-list > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .team {
   background: var(--second-background-color);
@@ -229,19 +240,24 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  /* padding: 30px 0; */
 }
 .team-member > img {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   display: block;
   max-width: 100%;
   height: auto;
+}
+.team-member-card {
+  box-sizing: border-box;
+  padding: 30px 0;
 }
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
-
+  margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -256,7 +272,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  margin: 10px 0 30px 0;
+  /* margin-bottom: 30px; */
 }
 .footer {
   background-color: var(--footer-background-color);
@@ -273,18 +289,19 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--contrast-color);
-  margin-top: 60px;
 }
 .footer-logo-blue {
   color: var(--hover-color);
 }
+.footer-list {
+  margin-top: 20px;
+}
 .footer-address {
   list-style-type: none;
   font-style: normal;
-  margin-top: 20px;
 }
-.footer-address > li:nth-child(n + 2) {
-  margin-top: 9px;
+.footer-address > li {
+  margin-bottom: 9px;
 }
 .footer-address-map {
   font-style: normal;
@@ -312,10 +329,7 @@ body {
 .footer-address-link:hover {
   color: var(--hover-color);
 }
-/* Porfolio page */
-/* .portfolio {
-  width: 1600px;
-} */
+
 .portfolio-list {
   display: flex;
   justify-content: center;
@@ -348,9 +362,11 @@ body {
 .portfolio-projects-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100%-3 * 30px) / 4);
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .portfolio-projects-list > li {
+  flex-basis: calc((100$ - 3 * 30px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -366,7 +382,6 @@ body {
   height: auto;
 }
 .portfolio-project {
-  background: #ffffff;
   border: 1px solid #eeeeee;
   border-top-color: transparent;
   box-sizing: border-box;
@@ -380,7 +395,7 @@ body {
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
-
+  margin-bottom: 4px;
   color: var(--main-color);
 }
 .portfolio-project-type {
@@ -390,5 +405,4 @@ body {
 
   letter-spacing: 0.03em;
   color: var(--second-color);
-  margin-top: 4px;
 }

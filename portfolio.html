@@ -5,44 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link
-      href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./CSS/modern-normalize.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
-        <div class="header-list">
-          <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
-
-          <nav class="navigation">
-            <ul class="list nav-list">
-              <li><a href="./index.html" class="link-nav">Студия</a></li>
-              <li class="current">Портфолио</li>
-              <li><a href="#" class="link-nav">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div>
-          <ul class="contacts list">
-            <li><a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a></li>
+        <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
+        <nav class="navigation">
+          <ul class="list nav-list">
+            <li class="current">Студия</li>
+            <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
+            <li><a href="#" class="link-nav">Контакты</a></li>
           </ul>
-        </div>
+        </nav>
+        <ul class="contacts list">
+          <li><a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a></li>
+        </ul>
       </div>
     </header>
     <main>
       <section class="portfolio section">
         <div class="container">
-          <h1 class="not-visible">Prontfolio</h1>
+          <h1 class="visually-hidden">Prontfolio</h1>
           <ul class="list portfolio-list">
             <li><button type="button" class="portfolio-list-buttons">Все</button></li>
             <li><button type="button" class="portfolio-list-buttons">Веб-сайты</button></li>
@@ -127,7 +119,7 @@
         <a href="./index.html" class="footer-logo"
           ><span class="footer-logo-blue">Web</span>Studio</a
         >
-        <address>
+        <address class="footer-list">
           <ul class="footer-address">
             <li>
               <a
