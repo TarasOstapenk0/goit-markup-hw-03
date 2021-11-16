@@ -171,9 +171,10 @@ body {
 }
 .why-we-list {
   display: flex;
-  flex-basis: calc((100% - 3 * 30) / 4);
 }
-
+.why-we-list > li {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
 .why-we-list > li:nth-child(n + 2) {
   margin-left: 30px;
 }
