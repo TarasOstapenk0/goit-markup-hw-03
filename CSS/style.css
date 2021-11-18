@@ -245,10 +245,8 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  /* padding: 30px 0; */
 }
 .team-member > img {
-  /* margin-bottom: 30px; */
   display: block;
   max-width: 100%;
   height: auto;
@@ -261,7 +259,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
+
   margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -272,12 +270,10 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
 
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  /* margin-bottom: 30px; */
 }
 .footer {
   background-color: var(--footer-background-color);
